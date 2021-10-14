@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Blood bank Management System</title>
+<link href="/css/lightbox.css" rel="stylesheet" />
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+  
+ <style>
+    .head{
+      font-weight: 700;
+      color:black;
+      font-size: 50px;
+    }
+ </style>
+</head>
+
+<body>
+
+
+
+ <div class="h_bg">
+<div class="wrap">
+<div class="header">
+    <div class="logo">
+    <h1 class="head"><a href="/"><img style="width:80px;height:60px;"src="/Images/07.jpg" alt=""><strong>Blood Bank Management System</a></h1>  
+    </div>
+  </div>
+</div>
+</div>
+<div class="nav_bg">
+<div class="wrap">
+            <% include partials/header.ejs %>
+
+  </div>
+  
+   
+<div style="height:350px;">
+
+     <form method="post" action="/find">
+   <table cellpadding="0" cellspacing="0" width="500px" height="250px" class="tableborder" style="margin:auto; margin-top:100px;" >
+         <tr><td colspan="2">&nbsp;</td></tr>
+        <tr><td colspan="2" align="center"><img src="/Images/search.png" height="80px" /></td></tr>
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr><td class="lefttd" style="padding-left:40px">Select Blood Group </td>
+          <td>
+          <select required name="blood">
+                                    <option disabled="disabled" selected="selected">Choose option</option>
+                                    <option value="A+">A+</option>
+                                    <option value="B+">B+</option>
+                                    <option value="O+">O+</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B-">B-</option>
+                                    <option value="O-">O-</option>
+                                    <option value="AB+">AB+</option>
+                                    <option value="AB-">AB-</option>
+                                </select>
+
+
+
+
+</td>
+</tr>
+<tr><td class="lefttd" style="margin-top:5px;padding-left:40px">City </td>
+  <td><input type="text" name="city"></td>
+  <tr><td colspan="2">&nbsp;
+            </td>
+    </tr>
+        <tr><td colspan="2">&nbsp;</td>
+      </tr>
+        <tr><td>&nbsp;</td><td>       
+<tr><td>&nbsp;</td><td><input type="submit" value="Search" name="sbmt" style="border:0px; background:linear-gradient(#900,#D50000); width:100px; height:30px; border-radius:10px 1px 10px 1px; box-shadow:1px 1px 5px black; color:white; font-weight:bold; font-size:14px; text-shadow:1px 1px 6px black; "></td></tr>
+
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+              
+</table>
+
+
+
+    
+</form>
+       
+
+
+ <div class="clear"></div>
+<div class="ftr-bg">
+<div class="wrap">
+<div class="footer">
+  <div class="f_nav">
+    <ul>
+     <li class="active"><a href="/">Home</a></li>     
+      <li><a href="/donor">Donor</a></li>
+            <li><a href="/login">log In</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+      
+            </ul>
+  </div>
+    <div class="copy">
+      <p class="title">© All Rights Reserved </p>
+    </div>
+  <div class="clear"></div>
+</div>
+</div>
+</div>
+    
+  
+</div>
+
+
+
+</body>
+</html>

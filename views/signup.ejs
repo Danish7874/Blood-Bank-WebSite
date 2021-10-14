@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Sign In </title>
+
+    <!-- Font Icon -->
+   
+<title>Blood bank Management System</title>
+<link href="/css/lightbox.css" rel="stylesheet" />
+<link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+
+   <style>
+    .head{
+      font-weight: 700;
+      color:black;
+      font-size: 50px;
+    }
+ </style>
+
+</head>
+<body>
+      
+  <% if(error && error.length>0){%>
+  <div class="alert alert-danger" role="alert">
+    <%=error%>
+  </div>
+  <% }%>
+  <% if(success && success.length>0){%>
+  <div class="alert alert-success" role="alert">
+    <%=success%>
+  </div>
+  <% }%>
+    <div class="main">
+
+
+ 
+
+
+
+<body>
+
+
+
+ <div class="h_bg">
+<div class="wrap">
+<div class="header">
+        <div class="logo">
+         <h1 class="head"><a href="/"><img style="width:80px;height:60px;"src="/Images/07.jpg" alt=""><strong>Blood Bank Management System</a></h1> 
+        </div>
+    </div>
+</div>
+</div>
+<div class="nav_bg">
+<div class="wrap">
+        <% include partials/header.ejs %>
+
+    </div>
+  
+   
+<div style="height:500px;">
+     <form method="post" action="/signup" >
+
+   <table cellpadding="0"  cellspacing="0" width="600px" height="300px" class="tableborder" style="margin:auto; margin-top:100px;" >
+     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td colspan="2" align="center"></td></tr>
+    
+     <tr><td colspan="2">&nbsp;</td></tr>
+       <tr><td colspan="2">&nbsp;</td></tr> 
+                <tr><td align="right"><img src="/Images/login1.png" width="200px" height="150px" /></td>
+                    <td style="vertical-align:top">
+                      <table cellpadding="0" cellspacing="0" height="200px" id="tab">             
+<tr><td class="lefttd">Name</td><td><input type="text" id="" name="username" required="required"/></td></tr>
+<tr><td class="lefttd">E-Mail</td><td><input type="email" name="email" required="required"/></td></tr>
+<tr><td class="lefttd">Password</td><td><input type="password" class="Password"  id="Password" name="password"  required="required" pattern="[a-zA-Z0-9]{4,10}" title="please enter only character or numbers between 4 to 10 for password"  /></td></tr>
+
+  
+<tr><td>&nbsp;</td><td><input type="submit" value="Sign Up" onclick="Validate()" name="sbmt" style="border:0px; background:linear-gradient(#900,#D50000); width:100px; height:30px; border-radius:10px 1px 10px 1px; box-shadow:1px 1px 5px black; color:white; font-weight:bold; font-size:14px; text-shadow:1px 1px 6px black; "></td></tr>
+ <tr><td style="font-size:14px">Not A DONOR.?</td><td ><a href="/donor" style="color:#C30">Click here</a> to REGISTER.</td></tr>
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+              
+</table>
+</td></tr></table>
+
+
+        
+</form>
+</div>
+
+       
+        <div class="clear"></div>
+<div class="ftr-bg">
+<div class="wrap">
+<div class="footer">
+    <div class="f_nav">
+        <ul>
+            <li class="active"><a href="/">Home</a></li>     
+      <li><a href="/donor">Donor</a></li>
+            <li><a href="/login">log In</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            
+            </ul>
+    </div>
+        <div class="copy">
+            <p class="title">© All Rights Reserved </p>
+        </div>
+    <div class="clear"></div>
+</div>
+</div>
+</div>
+        
+    
+</div>
+
+
+<script type="text/javascript">
+    function Validate() {
+         
+        var password = document.getElementById("Password").rows[2].cells[1].value;
+        var confirmPassword = document.getElementById("txtConfirmPassword");
+       console.log(password);
+        
+        if (password.value !== confirmPassword.value) {
+            alert("Passwords do not match.");
+            password.textContent=" ";
+            confirmPassword.textContent=" ";
+            return false;
+        }
+        return true;
+    }
+</script>
+
+</body>
+</html>

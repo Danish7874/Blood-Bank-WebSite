@@ -1,0 +1,15 @@
+  .design{
+        margin-top: 20%;
+       
+        margin-left: 22%;
+        margin-right: 22%;
+        padding: 10px 10px;
+        border:1px solid black;
+        border-radius: 20px;
+        background:teal;
+     }
+body{
+  background:url("/image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }

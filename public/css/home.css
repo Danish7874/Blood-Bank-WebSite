@@ -1,0 +1,31 @@
+body{
+	background: url("/joshua-newton-143831-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	.head{
+		text-align: center;
+		padding-top: 12%;
+		color:white;
+		font-weight: 800px;
+	}
+		.head1{
+		text-align: center;
+		/*padding-top: 15%;*/
+		color:white;
+		font-weight: 800px;
+	}
+	h4{
+		text-align: center;
+		/*padding-top: 15%;*/
+		color:white;
+	}
+	#butn{
+		text-align: center;
+		border-radius: 20px;
+		font-size: 22px;
+		/*box-shadow: 0 0 0 20px black;*/
+	}
+	 href hover{
+		text-decoration: none;
+	}
